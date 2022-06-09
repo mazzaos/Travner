@@ -42,7 +42,7 @@ struct GuidesView: View {
                                     PlaceRowView(guide: guide, place: place)
                                 }
                                 .onDelete { offsets in
-                                    let allPlaces = guide.guidePlaces
+                                    let allPlaces = guide.guidePlaces(using: sortOrder)
 
                                     for offset in offsets {
                                         let place = allPlaces[offset]
