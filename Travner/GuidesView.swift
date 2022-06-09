@@ -15,6 +15,7 @@ struct GuidesView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
 
     @State private var showingSortOrder = false
+    @State private var sortOrder = Place.SortOrder.optimized
     
     let showClosedGuides: Bool
     let guides: FetchRequest<Guide>
@@ -89,16 +90,23 @@ struct GuidesView: View {
             }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort places"), message: nil, buttons: [
-                    .default(Text("Optimized")) {  },
-                    .default(Text("Date Added")) {  },
-                    .default(Text("Name")) {  }
+                    .default(Text("Optimized")) { sortOrder = .optimized },
+                    .default(Text("Date Added")) { sortOrder = .dateAdded },
+                    .default(Text("Name")) { sortOrder = .name }
                 ])
             }
         }
     }
 
     func places(for guide: Guide) -> [Place] {
-        []
+        switch sortOrder {
+        case .name:
+            return guide.guidePlaces.sorted { $0.placeName < $1.placeName }
+        case .dateAdded:
+            return guide.guidePlaces.sorted { $0.placeDateAdded < $1.placeDateAdded }
+        case .optimized:
+            return guide.guidePlacesDefaultSorted
+        }
     }
 }
 

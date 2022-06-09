@@ -8,6 +8,10 @@
 import Foundation
 
 extension Place {
+    enum SortOrder {
+        case optimized, name, dateAdded
+    }
+
     var placeName: String {
         name ?? "New Place"
     }
