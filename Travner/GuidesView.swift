@@ -33,6 +33,16 @@ struct GuidesView: View {
                         ForEach(guide.guidePlaces) { place in
                             PlaceRowView(place: place)
                         }
+                        .onDelete { offsets in
+                            let allPlaces = guide.guidePlaces
+
+                            for offset in offsets {
+                                let place = allPlaces[offset]
+                                dataController.delete(place)
+                            }
+
+                            dataController.save()
+                        }
                     }
                 }
             }
