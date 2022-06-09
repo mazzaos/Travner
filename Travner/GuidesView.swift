@@ -34,7 +34,7 @@ struct GuidesView: View {
                 ForEach(guides.wrappedValue) { guide in
                     Section(header: GuideHeaderView(guide: guide)) {
                         ForEach(guide.guidePlaces(using: sortOrder)) { place in
-                            PlaceRowView(place: place)
+                            PlaceRowView(guide: guide, place: place)
                         }
                         .onDelete { offsets in
                             let allPlaces = guide.guidePlaces

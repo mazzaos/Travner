@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct PlaceRowView: View {
+    @ObservedObject var guide: Guide
     @ObservedObject var place: Place
+
+    var icon: some View {
+        if place.completed {
+            return Image(systemName: "checkmark.circle")
+                .foregroundColor(Color(guide.guideColor))
+        } else if place.priority == 3 {
+            return Image(systemName: "exclamationmark.triangle")
+                .foregroundColor(Color(guide.guideColor))
+        } else {
+            return Image(systemName: "checkmark.circle")
+                .foregroundColor(.clear)
+        }
+    }
 
     var body: some View {
         NavigationLink(destination: EditPlaceView(place: place)) {
-            Text(place.placeName)
+            Label {
+                Text(place.placeName)
+            } icon: {
+                icon
+            }
         }
     }
 }
 
 struct PlaceRowView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceRowView(place: Place.example)
+        PlaceRowView(guide: Guide.example, place: Place.example)
     }
 }
