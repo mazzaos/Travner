@@ -25,6 +25,7 @@
 		7C560E3D2852A1E3001C61AF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C560E3C2852A1E3001C61AF /* Colors.xcassets */; };
 		7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3E2852A259001C61AF /* EditGuideView.swift */; };
 		7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E402852B796001C61AF /* Sequence-Sorting.swift */; };
+		7C560E432852BF37001C61AF /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E422852BF37001C61AF /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		7C560E3C2852A1E3001C61AF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		7C560E3E2852A259001C61AF /* EditGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGuideView.swift; sourceTree = "<group>"; };
 		7C560E402852B796001C61AF /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		7C560E422852BF37001C61AF /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
 				7C560E3E2852A259001C61AF /* EditGuideView.swift */,
 				7C560E402852B796001C61AF /* Sequence-Sorting.swift */,
+				7C560E422852BF37001C61AF /* SelectSomethingView.swift */,
 				7C32429F284413F0004F2150 /* Assets.xcassets */,
 				7C560E3C2852A1E3001C61AF /* Colors.xcassets */,
 				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
@@ -199,6 +202,7 @@
 				7C32429E284413E9004F2150 /* ContentView.swift in Sources */,
 				7C560E2D28527472001C61AF /* HomeView.swift in Sources */,
 				7C32429C284413E9004F2150 /* TravnerApp.swift in Sources */,
+				7C560E432852BF37001C61AF /* SelectSomethingView.swift in Sources */,
 				7C560E3128527C18001C61AF /* Place-CoreDataHelpers.swift in Sources */,
 				7C560E3928529BAF001C61AF /* Binding-OnChange.swift in Sources */,
 				7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */,

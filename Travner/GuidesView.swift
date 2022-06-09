@@ -30,39 +30,46 @@ struct GuidesView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(guides.wrappedValue) { guide in
-                    Section(header: GuideHeaderView(guide: guide)) {
-                        ForEach(guide.guidePlaces(using: sortOrder)) { place in
-                            PlaceRowView(guide: guide, place: place)
-                        }
-                        .onDelete { offsets in
-                            let allPlaces = guide.guidePlaces
+            Group {
+                if guides.wrappedValue.count == 0 {
+                    Text("There's nothing here right now.")
+                        .foregroundColor(.secondary)
+                } else {
+                    List {
+                        ForEach(guides.wrappedValue) { guide in
+                            Section(header: GuideHeaderView(guide: guide)) {
+                                ForEach(guide.guidePlaces(using: sortOrder)) { place in
+                                    PlaceRowView(guide: guide, place: place)
+                                }
+                                .onDelete { offsets in
+                                    let allPlaces = guide.guidePlaces
 
-                            for offset in offsets {
-                                let place = allPlaces[offset]
-                                dataController.delete(place)
-                            }
+                                    for offset in offsets {
+                                        let place = allPlaces[offset]
+                                        dataController.delete(place)
+                                    }
 
-                            dataController.save()
-                        }
-
-                        if showClosedGuides == false {
-                            Button {
-                                withAnimation {
-                                    let place = Place(context: managedObjectContext)
-                                    place.guide = guide
-                                    place.dateAdded = Date()
                                     dataController.save()
                                 }
-                            } label: {
-                                Label("Add New Place", systemImage: "plus")
+
+                                if showClosedGuides == false {
+                                    Button {
+                                        withAnimation {
+                                            let place = Place(context: managedObjectContext)
+                                            place.guide = guide
+                                            place.dateAdded = Date()
+                                            dataController.save()
+                                        }
+                                    } label: {
+                                        Label("Add New Place", systemImage: "plus")
+                                    }
+                                }
                             }
                         }
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
             }
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedGuides ? "Closed Guides" : "Open Guides")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -95,6 +102,8 @@ struct GuidesView: View {
                     .default(Text("Name")) { sortOrder = .name }
                 ])
             }
+
+            SelectSomethingView()
         }
     }
 }
