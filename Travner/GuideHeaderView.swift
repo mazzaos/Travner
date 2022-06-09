@@ -22,8 +22,10 @@ struct GuideHeaderView: View {
 
             NavigationLink(destination: EmptyView()) {
                 Image(systemName: "square.and.pencil")
+                    .imageScale(.large)
             }
         }
+        .padding(.bottom, 10)
     }
 }
 
