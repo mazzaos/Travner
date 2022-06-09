@@ -47,6 +47,7 @@ struct EditPlaceView: View {
             }
         }
         .navigationTitle("Edit Place")
+        .onDisappear(perform: dataController.save)
     }
 
     func update() {
