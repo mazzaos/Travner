@@ -21,6 +21,7 @@
 		7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E34285297DC001C61AF /* EditPlaceView.swift */; };
 		7C560E37285298FC001C61AF /* PlaceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E36285298FC001C61AF /* PlaceRowView.swift */; };
 		7C560E3928529BAF001C61AF /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3828529BAF001C61AF /* Binding-OnChange.swift */; };
+		7C560E3B2852A101001C61AF /* GuideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3A2852A101001C61AF /* GuideHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7C560E34285297DC001C61AF /* EditPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlaceView.swift; sourceTree = "<group>"; };
 		7C560E36285298FC001C61AF /* PlaceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRowView.swift; sourceTree = "<group>"; };
 		7C560E3828529BAF001C61AF /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		7C560E3A2852A101001C61AF /* GuideHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				7C560E34285297DC001C61AF /* EditPlaceView.swift */,
 				7C560E36285298FC001C61AF /* PlaceRowView.swift */,
 				7C560E3828529BAF001C61AF /* Binding-OnChange.swift */,
+				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
 				7C32429F284413F0004F2150 /* Assets.xcassets */,
 				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
 				7C560E25285259F9001C61AF /* DataController.swift */,
@@ -182,6 +185,7 @@
 			files = (
 				7C560E24285242E9001C61AF /* Main.xcdatamodeld in Sources */,
 				7C560E26285259F9001C61AF /* DataController.swift in Sources */,
+				7C560E3B2852A101001C61AF /* GuideHeaderView.swift in Sources */,
 				7C32429E284413E9004F2150 /* ContentView.swift in Sources */,
 				7C560E2D28527472001C61AF /* HomeView.swift in Sources */,
 				7C32429C284413E9004F2150 /* TravnerApp.swift in Sources */,

@@ -26,7 +26,7 @@ struct GuidesView: View {
         NavigationView {
             List {
                 ForEach(guides.wrappedValue) { guide in
-                    Section(header: Text(guide.guideTitle)) {
+                    Section(header: GuideHeaderView(guide: guide)) {
                         ForEach(guide.guidePlaces) { place in
                             PlaceRowView(place: place)
                         }
