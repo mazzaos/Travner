@@ -9,7 +9,7 @@ import Foundation
 
 extension Place {
     var placeName: String {
-        name ?? ""
+        name ?? "New Place"
     }
 
     var placeDetail: String {

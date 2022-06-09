@@ -43,6 +43,19 @@ struct GuidesView: View {
 
                             dataController.save()
                         }
+
+                        if showClosedGuides == false {
+                            Button {
+                                withAnimation {
+                                    let place = Place(context: managedObjectContext)
+                                    place.guide = guide
+                                    place.dateAdded = Date()
+                                    dataController.save()
+                                }
+                            } label: {
+                                Label("Add New Place", systemImage: "plus")
+                            }
+                        }
                     }
                 }
             }
