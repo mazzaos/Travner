@@ -10,6 +10,9 @@ import SwiftUI
 struct GuidesView: View {
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
+
+    @EnvironmentObject var dataController: DataController
+    @Environment(\.managedObjectContext) var managedObjectContext
     
     let showClosedGuides: Bool
     let guides: FetchRequest<Guide>
@@ -35,6 +38,20 @@ struct GuidesView: View {
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedGuides ? "Closed Guides" : "Open Guides")
+            .toolbar {
+                if showClosedGuides == false {
+                    Button {
+                        withAnimation {
+                            let guide = Guide(context: managedObjectContext)
+                            guide.closed = false
+                            guide.creationDate = Date()
+                            dataController.save()
+                        }
+                    } label: {
+                        Label("Add Guide", systemImage: "plus")
+                    }
+                }
+            }
         }
     }
 }
