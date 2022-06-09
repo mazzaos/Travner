@@ -12,6 +12,8 @@
 		7C3242A0284413F0004F2150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C32429F284413F0004F2150 /* Assets.xcassets */; };
 		7C3242A3284413F0004F2150 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3242A2284413F0004F2150 /* Preview Assets.xcassets */; };
 		7C560E24285242E9001C61AF /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E22285242E9001C61AF /* Main.xcdatamodeld */; };
+		7C560E26285259F9001C61AF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E25285259F9001C61AF /* DataController.swift */; };
+		7C560E2B28526C74001C61AF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C560E2A28526C74001C61AF /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,10 @@
 		7C32429F284413F0004F2150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C3242A2284413F0004F2150 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C560E23285242E9001C61AF /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		7C560E25285259F9001C61AF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7C560E2728526C58001C61AF /* Travner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Travner.entitlements; sourceTree = "<group>"; };
+		7C560E2828526C5C001C61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7C560E2A28526C74001C61AF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C560E2B28526C74001C61AF /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +46,7 @@
 			children = (
 				7C32429A284413E9004F2150 /* Travner */,
 				7C324299284413E9004F2150 /* Products */,
+				7C560E2928526C74001C61AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,10 +61,13 @@
 		7C32429A284413E9004F2150 /* Travner */ = {
 			isa = PBXGroup;
 			children = (
+				7C560E2828526C5C001C61AF /* Info.plist */,
+				7C560E2728526C58001C61AF /* Travner.entitlements */,
 				7C32429B284413E9004F2150 /* TravnerApp.swift */,
 				7C32429D284413E9004F2150 /* ContentView.swift */,
-				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
 				7C32429F284413F0004F2150 /* Assets.xcassets */,
+				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
+				7C560E25285259F9001C61AF /* DataController.swift */,
 				7C3242A1284413F0004F2150 /* Preview Content */,
 			);
 			path = Travner;
@@ -68,6 +79,14 @@
 				7C3242A2284413F0004F2150 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C560E2928526C74001C61AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C560E2A28526C74001C61AF /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C560E24285242E9001C61AF /* Main.xcdatamodeld in Sources */,
+				7C560E26285259F9001C61AF /* DataController.swift in Sources */,
 				7C32429E284413E9004F2150 /* ContentView.swift in Sources */,
 				7C32429C284413E9004F2150 /* TravnerApp.swift in Sources */,
 			);
@@ -268,12 +288,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Travner/Travner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travner/Preview Content\"";
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Travner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,12 +319,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Travner/Travner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travner/Preview Content\"";
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Travner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
