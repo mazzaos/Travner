@@ -11,10 +11,12 @@ struct EditGuideView: View {
     let guide: Guide
 
     @EnvironmentObject var dataController: DataController
+    @Environment(\.presentationMode) var presentationMode
 
     @State private var title: String
     @State private var detail: String
     @State private var color: String
+    @State private var showingDeleteConfirm = false
 
     let colorColumns = [
         GridItem(.adaptive(minimum: 44))
@@ -65,18 +67,27 @@ struct EditGuideView: View {
                 }
 
                 Button("Delete this guide") {
-                    // delete the guide
+                    showingDeleteConfirm.toggle()
                 }
                 .accentColor(.red)
             }
         }
         .navigationTitle("Edit Guide")
+        .onDisappear(perform: dataController.save)
+        .alert(isPresented: $showingDeleteConfirm) {
+            Alert(title: Text("Delete guide?"), message: Text("Are you sure you want to delete this guide? You will also delete all the places it contains."), primaryButton: .default(Text("Delete"), action: delete), secondaryButton: .cancel())
+        }
     }
 
     func update() {
         guide.title = title
         guide.detail = detail
         guide.color = color
+    }
+
+    func delete() {
+        dataController.delete(guide)
+        presentationMode.wrappedValue.dismiss()
     }
 }
 

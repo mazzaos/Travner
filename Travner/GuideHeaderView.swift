@@ -21,7 +21,7 @@ struct GuideHeaderView: View {
 
             Spacer()
 
-            NavigationLink(destination: EmptyView()) {
+            NavigationLink(destination: EditGuideView(guide: guide)) {
                 Image(systemName: "square.and.pencil")
                     .imageScale(.large)
             }
