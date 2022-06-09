@@ -29,12 +29,12 @@ struct EditPlaceView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
-                TextField("Place name", text: $name)
-                TextField("Description", text: $detail)
+                TextField("Place name", text: $name.onChange(update))
+                TextField("Description", text: $detail.onChange(update))
             }
 
             Section(header: Text("Priority")) {
-                Picker("Priority", selection: $priority) {
+                Picker("Priority", selection: $priority.onChange(update)) {
                     Text("Low").tag(1)
                     Text("Medium").tag(2)
                     Text("High").tag(3)
@@ -43,14 +43,10 @@ struct EditPlaceView: View {
             }
 
             Section {
-                Toggle("Mark Completed", isOn: $completed)
+                Toggle("Mark Completed", isOn: $completed.onChange(update))
             }
         }
         .navigationTitle("Edit Place")
-        .onChange(of: name) { _ in update() }
-        .onChange(of: detail) { _ in update() }
-        .onChange(of: priority) { _ in update() }
-        .onChange(of: completed) { _ in update() }
     }
 
     func update() {
