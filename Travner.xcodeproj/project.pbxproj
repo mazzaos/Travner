@@ -23,6 +23,7 @@
 		7C560E3928529BAF001C61AF /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3828529BAF001C61AF /* Binding-OnChange.swift */; };
 		7C560E3B2852A101001C61AF /* GuideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3A2852A101001C61AF /* GuideHeaderView.swift */; };
 		7C560E3D2852A1E3001C61AF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C560E3C2852A1E3001C61AF /* Colors.xcassets */; };
+		7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3E2852A259001C61AF /* EditGuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		7C560E3828529BAF001C61AF /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		7C560E3A2852A101001C61AF /* GuideHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderView.swift; sourceTree = "<group>"; };
 		7C560E3C2852A1E3001C61AF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		7C560E3E2852A259001C61AF /* EditGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				7C560E36285298FC001C61AF /* PlaceRowView.swift */,
 				7C560E3828529BAF001C61AF /* Binding-OnChange.swift */,
 				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
+				7C560E3E2852A259001C61AF /* EditGuideView.swift */,
 				7C32429F284413F0004F2150 /* Assets.xcassets */,
 				7C560E3C2852A1E3001C61AF /* Colors.xcassets */,
 				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
@@ -196,6 +199,7 @@
 				7C560E3128527C18001C61AF /* Place-CoreDataHelpers.swift in Sources */,
 				7C560E3928529BAF001C61AF /* Binding-OnChange.swift in Sources */,
 				7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */,
+				7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */,
 				7C560E37285298FC001C61AF /* PlaceRowView.swift in Sources */,
 				7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */,
 				7C560E3328527C3D001C61AF /* Guide-CoreDataHelpers.swift in Sources */,
