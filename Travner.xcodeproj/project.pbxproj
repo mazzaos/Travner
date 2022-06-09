@@ -15,6 +15,7 @@
 		7C560E26285259F9001C61AF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E25285259F9001C61AF /* DataController.swift */; };
 		7C560E2B28526C74001C61AF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C560E2A28526C74001C61AF /* CloudKit.framework */; };
 		7C560E2D28527472001C61AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E2C28527472001C61AF /* HomeView.swift */; };
+		7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E2E2852778A001C61AF /* GuidesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		7C560E2828526C5C001C61AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7C560E2A28526C74001C61AF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		7C560E2C28527472001C61AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7C560E2E2852778A001C61AF /* GuidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				7C32429B284413E9004F2150 /* TravnerApp.swift */,
 				7C32429D284413E9004F2150 /* ContentView.swift */,
 				7C560E2C28527472001C61AF /* HomeView.swift */,
+				7C560E2E2852778A001C61AF /* GuidesView.swift */,
 				7C32429F284413F0004F2150 /* Assets.xcassets */,
 				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
 				7C560E25285259F9001C61AF /* DataController.swift */,
@@ -167,6 +170,7 @@
 				7C32429E284413E9004F2150 /* ContentView.swift in Sources */,
 				7C560E2D28527472001C61AF /* HomeView.swift in Sources */,
 				7C32429C284413E9004F2150 /* TravnerApp.swift in Sources */,
+				7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
