@@ -23,9 +23,9 @@ struct GuidesView: View {
         NavigationView {
             List {
                 ForEach(guides.wrappedValue) { guide in
-                    Section(header: Text(guide.title ?? "")) {
-                        ForEach(guide.places?.allObjects as? [Place] ?? []) { place in
-                            Text(place.name ?? "")
+                    Section(header: Text(guide.guideTitle)) {
+                        ForEach(guide.guidePlaces) { place in
+                            Text(place.placeName)
                         }
                     }
                 }
