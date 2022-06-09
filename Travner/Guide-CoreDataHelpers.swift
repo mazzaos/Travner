@@ -8,6 +8,8 @@
 import Foundation
 
 extension Guide {
+    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    
     var guideTitle: String {
         title ?? "New Guide"
     }
