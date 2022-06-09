@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GuidesView: View {
+    static let openTag: String = "Open"
+    static let closedTag: String = "Closed"
+    
     let showClosedGuides: Bool
     let guides: FetchRequest<Guide>
 
