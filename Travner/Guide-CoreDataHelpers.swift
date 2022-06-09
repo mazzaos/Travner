@@ -23,9 +23,11 @@ extension Guide {
     }
 
     var guidePlaces: [Place] {
-        let placesArray = places?.allObjects as? [Place] ?? []
+        places?.allObjects as? [Place] ?? []
+    }
 
-        return placesArray.sorted { first, second in
+    var guidePlacesDefaultSorted: [Place] {
+        guidePlaces.sorted { first, second in
             if first.completed == false {
                 if second.completed == true {
                     return true

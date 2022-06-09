@@ -13,6 +13,8 @@ struct GuidesView: View {
 
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
+
+    @State private var showingSortOrder = false
     
     let showClosedGuides: Bool
     let guides: FetchRequest<Guide>
@@ -30,7 +32,7 @@ struct GuidesView: View {
             List {
                 ForEach(guides.wrappedValue) { guide in
                     Section(header: GuideHeaderView(guide: guide)) {
-                        ForEach(guide.guidePlaces) { place in
+                        ForEach(places(for: guide)) { place in
                             PlaceRowView(place: place)
                         }
                         .onDelete { offsets in
@@ -62,20 +64,41 @@ struct GuidesView: View {
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedGuides ? "Closed Guides" : "Open Guides")
             .toolbar {
-                if showClosedGuides == false {
-                    Button {
-                        withAnimation {
-                            let guide = Guide(context: managedObjectContext)
-                            guide.closed = false
-                            guide.creationDate = Date()
-                            dataController.save()
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    if showClosedGuides == false {
+                        Button {
+                            withAnimation {
+                                let guide = Guide(context: managedObjectContext)
+                                guide.closed = false
+                                guide.creationDate = Date()
+                                dataController.save()
+                            }
+                        } label: {
+                            Label("Add Guide", systemImage: "plus")
                         }
+                    }
+                }
+
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        showingSortOrder.toggle()
                     } label: {
-                        Label("Add Guide", systemImage: "plus")
+                        Label("Sort", systemImage: "arrow.up.arrow.down")
                     }
                 }
             }
+            .actionSheet(isPresented: $showingSortOrder) {
+                ActionSheet(title: Text("Sort places"), message: nil, buttons: [
+                    .default(Text("Optimized")) {  },
+                    .default(Text("Date Added")) {  },
+                    .default(Text("Name")) {  }
+                ])
+            }
         }
+    }
+
+    func places(for guide: Guide) -> [Place] {
+        []
     }
 }
 
