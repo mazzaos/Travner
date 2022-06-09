@@ -18,6 +18,7 @@
 		7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E2E2852778A001C61AF /* GuidesView.swift */; };
 		7C560E3128527C18001C61AF /* Place-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3028527C18001C61AF /* Place-CoreDataHelpers.swift */; };
 		7C560E3328527C3D001C61AF /* Guide-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3228527C3D001C61AF /* Guide-CoreDataHelpers.swift */; };
+		7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E34285297DC001C61AF /* EditPlaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7C560E2E2852778A001C61AF /* GuidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesView.swift; sourceTree = "<group>"; };
 		7C560E3028527C18001C61AF /* Place-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		7C560E3228527C3D001C61AF /* Guide-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Guide-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		7C560E34285297DC001C61AF /* EditPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				7C560E2E2852778A001C61AF /* GuidesView.swift */,
 				7C560E3028527C18001C61AF /* Place-CoreDataHelpers.swift */,
 				7C560E3228527C3D001C61AF /* Guide-CoreDataHelpers.swift */,
+				7C560E34285297DC001C61AF /* EditPlaceView.swift */,
 				7C32429F284413F0004F2150 /* Assets.xcassets */,
 				7C560E22285242E9001C61AF /* Main.xcdatamodeld */,
 				7C560E25285259F9001C61AF /* DataController.swift */,
@@ -178,6 +181,7 @@
 				7C32429C284413E9004F2150 /* TravnerApp.swift in Sources */,
 				7C560E3128527C18001C61AF /* Place-CoreDataHelpers.swift in Sources */,
 				7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */,
+				7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */,
 				7C560E3328527C3D001C61AF /* Guide-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
