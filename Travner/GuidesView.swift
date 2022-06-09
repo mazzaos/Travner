@@ -33,7 +33,7 @@ struct GuidesView: View {
             List {
                 ForEach(guides.wrappedValue) { guide in
                     Section(header: GuideHeaderView(guide: guide)) {
-                        ForEach(places(for: guide)) { place in
+                        ForEach(guide.guidePlaces(using: sortOrder)) { place in
                             PlaceRowView(place: place)
                         }
                         .onDelete { offsets in
@@ -95,17 +95,6 @@ struct GuidesView: View {
                     .default(Text("Name")) { sortOrder = .name }
                 ])
             }
-        }
-    }
-
-    func places(for guide: Guide) -> [Place] {
-        switch sortOrder {
-        case .name:
-            return guide.guidePlaces.sorted { $0.placeName < $1.placeName }
-        case .dateAdded:
-            return guide.guidePlaces.sorted { $0.placeDateAdded < $1.placeDateAdded }
-        case .optimized:
-            return guide.guidePlacesDefaultSorted
         }
     }
 }

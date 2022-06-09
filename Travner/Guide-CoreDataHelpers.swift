@@ -67,4 +67,15 @@ extension Guide {
         guide.creationDate = Date()
         return guide
     }
+
+    func guidePlaces(using sortOrder: Place.SortOrder) -> [Place] {
+        switch sortOrder {
+        case .name:
+            return guidePlaces.sorted(by: \Place.placeName)
+        case .dateAdded:
+            return guidePlaces.sorted(by: \Place.placeDateAdded)
+        case .optimized:
+            return guidePlacesDefaultSorted
+        }
+    }
 }
