@@ -16,6 +16,7 @@ struct GuideHeaderView: View {
                 Text(guide.guideTitle)
 
                 ProgressView(value: guide.completionAmount)
+                    .accentColor(Color(guide.guideColor))
             }
 
             Spacer()
