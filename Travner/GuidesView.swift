@@ -28,9 +28,7 @@ struct GuidesView: View {
                 ForEach(guides.wrappedValue) { guide in
                     Section(header: Text(guide.guideTitle)) {
                         ForEach(guide.guidePlaces) { place in
-                            NavigationLink(destination: EditPlaceView(place: place)) {
-                                Text(place.placeName)
-                            }
+                            PlaceRowView(place: place)
                         }
                     }
                 }
