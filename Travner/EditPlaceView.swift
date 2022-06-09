@@ -47,6 +47,16 @@ struct EditPlaceView: View {
             }
         }
         .navigationTitle("Edit Place")
+        .onDisappear(perform: update)
+    }
+
+    func update() {
+        place.guide?.objectWillChange.send()
+
+        place.name = name
+        place.detail = detail
+        place.priority = Int16(priority)
+        place.completed = completed
     }
 }
 
