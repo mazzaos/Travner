@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    static let tag: String = "Guides"
+    static let tag: String? = "Guides"
     
     @EnvironmentObject var dataController: DataController
 
