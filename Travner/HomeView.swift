@@ -28,10 +28,37 @@ struct HomeView: View {
         places = FetchRequest(fetchRequest: request)
     }
 
+    var guideRows: [GridItem] {
+        [GridItem(.fixed(100))]
+    }
+
     var body: some View {
         NavigationView {
             ScrollView {
+                VStack(alignment: .leading) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHGrid(rows: guideRows) {
+                            ForEach(guides) { guide in
+                                VStack(alignment: .leading) {
+                                    Text("\(guide.guidePlaces.count) places")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
 
+                                    Text(guide.guideTitle)
+                                        .font(.title2)
+
+                                    ProgressView(value: guide.completionAmount)
+                                        .accentColor(Color(guide.guideColor))
+                                }
+                                .padding()
+                                .background(Color.secondarySystemGroupedBackground)
+                                .cornerRadius(10)
+                                .shadow(color: Color.black.opacity(0.2), radius: 5)
+                            }
+                        }
+                        .padding([.horizontal, .top])
+                    }
+                }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("My Guides")
