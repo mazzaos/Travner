@@ -80,4 +80,8 @@ class DataController: ObservableObject {
         let batchDeleteRequestGuides = NSBatchDeleteRequest(fetchRequest: fetchRequestGuides)
         _ = try? container.viewContext.execute(batchDeleteRequestGuides)
     }
+
+    func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
+        (try? container.viewContext.count(for: fetchRequest)) ?? 0
+    }
 }
