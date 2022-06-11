@@ -96,10 +96,11 @@ struct GuidesView: View {
                 }
             }
             .actionSheet(isPresented: $showingSortOrder) {
-                ActionSheet(title: Text("Sort places"), message: nil, buttons: [
+                ActionSheet(title: Text("Sort places by:"), message: nil, buttons: [
                     .default(Text("Optimized")) { sortOrder = .optimized },
                     .default(Text("Date Added")) { sortOrder = .dateAdded },
-                    .default(Text("Name")) { sortOrder = .name }
+                    .default(Text("Name")) { sortOrder = .name },
+                    .cancel()
                 ])
             }
 
