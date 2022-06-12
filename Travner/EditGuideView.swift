@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditGuideView: View {
-    let guide: Guide
+    @ObservedObject var guide: Guide
 
     @EnvironmentObject var dataController: DataController
     @Environment(\.presentationMode) var presentationMode
