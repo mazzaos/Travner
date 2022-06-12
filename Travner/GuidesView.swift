@@ -57,6 +57,8 @@ struct GuidesView: View {
                                         withAnimation {
                                             let place = Place(context: managedObjectContext)
                                             place.guide = guide
+                                            place.priority = 2
+                                            place.completed = false
                                             place.dateAdded = Date()
                                             dataController.save()
                                         }
