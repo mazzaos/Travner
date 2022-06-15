@@ -30,7 +30,7 @@ struct EditPlaceView: View {
         Form {
             Section(header: Text("Basic settings")) {
                 TextField("Place name", text: $name.onChange(update))
-                TextField("Description", text: $detail.onChange(update))
+                TextField("Description of this place", text: $detail.onChange(update))
             }
 
             Section(header: Text("Priority")) {
