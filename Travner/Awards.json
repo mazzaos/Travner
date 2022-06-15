@@ -126,37 +126,5 @@
         "criterion": "complete",
         "value": 1000,
         "image": "bolt.circle.fill"
-    },
-    {
-        "name": "First Message",
-        "description": "You posted your first message to the group chat.",
-        "color": "Purple",
-        "criterion": "chat",
-        "value": 1,
-        "image": "person.fill"
-    },
-    {
-        "name": "Frequent Chatter",
-        "description": "You've posted 10 messages to the group chat.",
-        "color": "Purple",
-        "criterion": "chat",
-        "value": 10,
-        "image": "message.fill"
-    },
-    {
-        "name": "Community Powerhouse",
-        "description": "You've posted 100 messages to the group chat.",
-        "color": "Purple",
-        "criterion": "chat",
-        "value": 100,
-        "image": "arrow.up.heart.fill"
-    },
-    {
-        "name": "Supporter",
-        "description": "You bought the premium unlock.",
-        "color": "Green",
-        "criterion": "unlock",
-        "value": 0,
-        "image": "dollarsign.square.fill"
     }
 ]
