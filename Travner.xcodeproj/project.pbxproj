@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7C275DA82852CB0F001668CD /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C275DA72852CB0F001668CD /* Bundle-Decodable.swift */; };
-		7C275DAA2852CB45001668CD /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C275DA92852CB45001668CD /* Awards.json */; };
 		7C275DAC2852CB55001668CD /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C275DAB2852CB55001668CD /* Award.swift */; };
 		7C275DAE2852CB88001668CD /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C275DAD2852CB88001668CD /* AwardsView.swift */; };
 		7C32429C284413E9004F2150 /* TravnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C32429B284413E9004F2150 /* TravnerApp.swift */; };
@@ -17,6 +16,7 @@
 		7C3242A3284413F0004F2150 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3242A2284413F0004F2150 /* Preview Assets.xcassets */; };
 		7C5586EE285F00690001029D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C5586F0285F00690001029D /* Localizable.strings */; };
 		7C5586F4285F09ED0001029D /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7C5586F6285F09ED0001029D /* Localizable.stringsdict */; };
+		7C5586F8285F0AD20001029D /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C5586FA285F0AD20001029D /* Awards.json */; };
 		7C560E24285242E9001C61AF /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E22285242E9001C61AF /* Main.xcdatamodeld */; };
 		7C560E26285259F9001C61AF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E25285259F9001C61AF /* DataController.swift */; };
 		7C560E2B28526C74001C61AF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C560E2A28526C74001C61AF /* CloudKit.framework */; };
@@ -37,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		7C275DA72852CB0F001668CD /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
-		7C275DA92852CB45001668CD /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		7C275DAB2852CB55001668CD /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		7C275DAD2852CB88001668CD /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		7C324298284413E9004F2150 /* Travner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,8 @@
 		7C5586F1285F00C50001029D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7C5586F5285F09ED0001029D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		7C5586F7285F09EF0001029D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "pt-BR"; path = "pt-BR.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		7C5586F9285F0AD20001029D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
+		7C5586FB285F0AD30001029D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-BR"; path = "pt-BR.lproj/Awards.json"; sourceTree = "<group>"; };
 		7C560E23285242E9001C61AF /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		7C560E25285259F9001C61AF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7C560E2728526C58001C61AF /* Travner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Travner.entitlements; sourceTree = "<group>"; };
@@ -117,7 +118,7 @@
 				7C560E402852B796001C61AF /* Sequence-Sorting.swift */,
 				7C560E422852BF37001C61AF /* SelectSomethingView.swift */,
 				7C275DA72852CB0F001668CD /* Bundle-Decodable.swift */,
-				7C275DA92852CB45001668CD /* Awards.json */,
+				7C5586FA285F0AD20001029D /* Awards.json */,
 				7C275DAB2852CB55001668CD /* Award.swift */,
 				7C275DAD2852CB88001668CD /* AwardsView.swift */,
 				7CF60F3D2853481B002CAEBA /* Color-Additions.swift */,
@@ -209,7 +210,7 @@
 			files = (
 				7C5586EE285F00690001029D /* Localizable.strings in Resources */,
 				7C560E3D2852A1E3001C61AF /* Colors.xcassets in Resources */,
-				7C275DAA2852CB45001668CD /* Awards.json in Resources */,
+				7C5586F8285F0AD20001029D /* Awards.json in Resources */,
 				7C3242A3284413F0004F2150 /* Preview Assets.xcassets in Resources */,
 				7C3242A0284413F0004F2150 /* Assets.xcassets in Resources */,
 				7C5586F4285F09ED0001029D /* Localizable.stringsdict in Resources */,
@@ -264,6 +265,15 @@
 				7C5586F7285F09EF0001029D /* pt-BR */,
 			);
 			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		7C5586FA285F0AD20001029D /* Awards.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C5586F9285F0AD20001029D /* en */,
+				7C5586FB285F0AD30001029D /* pt-BR */,
+			);
+			name = Awards.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
