@@ -1,0 +1,94 @@
+/* 
+  Localizable.strings
+  Travner
+
+  Created by Lorenzo Lins Mazzarotto on 19/06/22.
+  
+*/
+
+/* GENERAL STRINGS */
+
+"OK" = "OK";
+"Delete" = "Delete";
+"Basic settings" = "Basic settings";
+
+
+
+/* MAIN ACTIVITIES */
+
+"Guides" = "Guides";
+"Open" = "Open";
+"Closed" = "Closed";
+"Awards" = "Awards";
+
+
+
+/* HOME VIEW */
+
+"My Guides" = "My Guides";
+"Up next" = "Up next";
+"More to explore" = "More to explore";
+
+
+
+/* PROJECTS VIEW */
+
+"Open Guides" = "Open Guides";
+"Closed Guides" = "Closed Guides";
+"Add Guide" = "Add Guide";
+"Add New Place" = "Add New Place";
+"There's nothing here right now." = "There's nothing here right now.";
+
+/* A button that shows a menu with the following options */
+"Sort places by:" = "Sort places by:"; /* The title of the menu */
+"Optimized" = "Optimized"; /* Sort using an optimized algorithm */
+"Date Added" = "Date Added"; /* Sort by the date places were created */
+"Name" = "Name"; /* Sort by place name */
+
+/* Default names for a new guide and a new place */
+"New Guide" = "New Guide";
+"New Place" = "New Place";
+
+
+
+/* EDITING PROJECTS */
+"Edit Guide" = "Edit Guide";
+"Guide name" = "Guide name";
+"Description of this guide" = "Description of this guide";
+"Custom guide color" = "Custom guide color";
+
+/* Options to close (mark as finished), open (mark as unfinished), or delete a guide. */
+"Close this guide" = "Close this guide";
+"Closing a guide moves it from the Open to Closed tab; deleting it removes the guide completely." = "Closing a guide moves it from the Open to Closed tab; deleting it removes the guide completely.";
+"Reopen this guide" = "Reopen this guide";
+"Delete this guide" = "Delete this guide";
+"Delete guide?" = "Delete guide?";
+"Are you sure you want to delete this guide? You will also delete all the places it contains." = "Are you sure you want to delete this guide? You will also delete all the places it contains.";
+
+
+
+/* EDITING ITEMS */
+"Edit Place" = "Edit Place";
+"Place name" = "Place name";
+"Description of this place" = "Description of this place";
+"Priority" = "Priority";
+"Low" = "Low";
+"Medium" = "Medium";
+"High" = "High";
+
+"Mark Completed" = "Mark Completed"; /* Mark this place as being completed (finished/accomplished) */
+
+
+
+/* AWARDS */
+
+"Locked" = "Locked";
+"Unlocked: %@" = "Unlocked: %@";
+
+
+
+/* OTHER STRINGS */
+
+/* Shown by default when the user hasn't select a guide or place */
+"Please select something from the menu to begin." = "Please select something from the menu to begin.";
+
