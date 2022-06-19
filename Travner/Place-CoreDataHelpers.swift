@@ -13,7 +13,7 @@ extension Place {
     }
 
     var placeName: String {
-        name ?? "New Place"
+        name ?? NSLocalizedString("New Place", comment: "Create a new place")
     }
 
     var placeDetail: String {
