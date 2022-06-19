@@ -77,7 +77,7 @@ struct HomeView: View {
         }
     }
 
-    @ViewBuilder func list(_ title: String, for places: FetchedResults<Place>.SubSequence) -> some View {
+    @ViewBuilder func list(_ title: LocalizedStringKey, for places: FetchedResults<Place>.SubSequence) -> some View {
         if places.isEmpty {
             EmptyView()
         } else {
