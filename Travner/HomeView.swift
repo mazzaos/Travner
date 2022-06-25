@@ -60,7 +60,7 @@ struct HomeView: View {
                                 .cornerRadius(10)
                                 .shadow(color: Color.black.opacity(0.2), radius: 5)
                                 .accessibilityElement(children: .ignore)
-                                .accessibilityLabel("\(guide.guideTitle), \(guide.guidePlaces.count) places, \(guide.completionAmount * 100, specifier: "%g")% complete.")
+                                .accessibilityLabel(guide.label)
                             }
                         }
                         .padding([.horizontal, .top])

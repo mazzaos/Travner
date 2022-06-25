@@ -5,7 +5,7 @@
 //  Created by Lorenzo Lins Mazzarotto on 09/06/22.
 //
 
-import Foundation
+import SwiftUI
 
 extension Guide {
     static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
@@ -54,6 +54,10 @@ extension Guide {
 
         let completedPlaces = originalPlaces.filter(\.completed)
         return Double(completedPlaces.count) / Double(originalPlaces.count)
+    }
+
+    var label: LocalizedStringKey {
+        LocalizedStringKey("\(guideTitle), \(guidePlaces.count) places, \(completionAmount * 100, specifier: "%g")% complete.")
     }
 
     static var example: Guide {
