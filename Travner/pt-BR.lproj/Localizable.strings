@@ -29,6 +29,8 @@
 "Up next" = "A seguir";
 "More to explore" = "Mais para explorar";
 
+"%@, %lld places, %g%% complete." = "%@, %lld lugares, %g%% concluído.";
+
 
 
 /* PROJECTS VIEW */
