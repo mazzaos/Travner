@@ -33,7 +33,7 @@
 
 
 
-/* PROJECTS VIEW */
+/* GUIDES VIEW */
 
 "Open Guides" = "Guias Abertos";
 "Closed Guides" = "Guias Fechados";
@@ -56,7 +56,7 @@
 
 
 
-/* EDITING PROJECTS */
+/* EDITING GUIDES */
 "Edit Guide" = "Editar Guia";
 "Guide name" = "Nome do Guia";
 "Description of this guide" = "Descrição deste guia";
