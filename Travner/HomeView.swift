@@ -43,76 +43,21 @@ struct HomeView: View {
                 VStack(alignment: .leading) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHGrid(rows: guideRows) {
-                            ForEach(guides) { guide in
-                                VStack(alignment: .leading) {
-                                    Text("\(guide.guidePlaces.count) places")
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
-
-                                    Text(guide.guideTitle)
-                                        .font(.title2)
-
-                                    ProgressView(value: guide.completionAmount)
-                                        .accentColor(Color(guide.guideColor))
-                                }
-                                .padding()
-                                .background(Color.secondarySystemGroupedBackground)
-                                .cornerRadius(10)
-                                .shadow(color: Color.black.opacity(0.2), radius: 5)
-                                .accessibilityElement(children: .ignore)
-                                .accessibilityLabel(guide.label)
-                            }
+                            ForEach(guides, content: GuideSummaryView.init)
                         }
                         .padding([.horizontal, .top])
                         .fixedSize(horizontal: false, vertical: true)
                     }
 
                     VStack(alignment: .leading) {
-                        list("Up next", for: places.wrappedValue.prefix(3))
-                        list("More to explore", for: places.wrappedValue.dropFirst(3))
+                        PlaceListView(title: "Up next", places: places.wrappedValue.prefix(3))
+                        PlaceListView(title: "More to explore", places: places.wrappedValue.dropFirst(3))
                     }
                     .padding(.horizontal)
                 }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("My Guides")
-        }
-    }
-
-    @ViewBuilder func list(_ title: LocalizedStringKey, for places: FetchedResults<Place>.SubSequence) -> some View {
-        if places.isEmpty {
-            EmptyView()
-        } else {
-            Text(title)
-                .font(.headline)
-                .foregroundColor(.secondary)
-                .padding(.top)
-
-            ForEach(places) { place in
-                NavigationLink(destination: EditPlaceView(place: place)) {
-                    HStack(spacing: 20) {
-                        Circle()
-                            .stroke(Color(place.guide?.guideColor ?? "Light Blue"), lineWidth: 3)
-                            .frame(width: 44, height: 44)
-
-                        VStack(alignment: .leading) {
-                            Text(place.placeName)
-                                .font(.title2)
-                                .foregroundColor(.primary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-
-                            if place.placeDetail.isEmpty == false {
-                                Text(place.placeDetail)
-                                    .foregroundColor(.secondary)
-                            }
-                        }
-                    }
-                    .padding()
-                    .background(Color.secondarySystemGroupedBackground)
-                    .cornerRadius(10)
-                    .shadow(color: Color.black.opacity(0.2), radius: 5)
-                }
-            }
         }
     }
 }
