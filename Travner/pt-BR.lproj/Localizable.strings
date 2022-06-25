@@ -51,6 +51,9 @@
 "New Guide" = "Novo Guia";
 "New Place" = "Novo Lugar";
 
+"%@, completed." = "%@, concluído.";
+"%@, high priority." = "%@, prioridade alta.";
+
 
 
 /* EDITING PROJECTS */

@@ -24,6 +24,16 @@ struct PlaceRowView: View {
         }
     }
 
+    var label: Text {
+        if place.completed {
+            return Text("\(place.placeName), completed.")
+        } else if place.priority == 3 {
+            return Text("\(place.placeName), high priority.")
+        } else {
+            return Text(place.placeName)
+        }
+    }
+
     var body: some View {
         NavigationLink(destination: EditPlaceView(place: place)) {
             Label {
@@ -31,6 +41,7 @@ struct PlaceRowView: View {
             } icon: {
                 icon
             }
+            .accessibilityLabel(label)
         }
     }
 }
