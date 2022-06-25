@@ -67,6 +67,19 @@
 "Delete guide?" = "Excluir guia?";
 "Are you sure you want to delete this guide? You will also delete all the places it contains." = "Tem certeza de que deseja excluir este guia? Você também excluirá todos os lugares que ele contém.";
 
+"Pink" = "Rosa";
+"Purple" = "Roxo";
+"Red" = "Vermelho";
+"Orange" = "Laranja";
+"Gold" = "Ouro";
+"Green" = "Verde";
+"Teal" = "Azul Petróleo";
+"Light Blue" = "Azul Claro";
+"Dark Blue" = "Azul Escuro";
+"Midnight" = "Meia Noite";
+"Dark Gray" = "Cinza Escuro";
+"Gray" = "Cinza";
+
 
 
 /* EDITING ITEMS */
