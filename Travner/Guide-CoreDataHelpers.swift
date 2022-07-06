@@ -70,6 +70,7 @@ extension Guide {
     }
 
     var label: LocalizedStringKey {
+        // swiftlint:disable:next line_length
         LocalizedStringKey("\(guideTitle), \(guidePlaces.count) places, \(completionAmount * 100, specifier: "%g")% complete.")
     }
 

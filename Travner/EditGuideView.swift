@@ -44,6 +44,7 @@ struct EditGuideView: View {
                 .padding(.vertical)
             }
 
+            // swiftlint:disable:next line_length
             Section(footer: Text("Closing a guide moves it from the Open to Closed tab; deleting it removes the guide completely.")) {
                 Button(guide.closed ? "Reopen this guide" : "Close this guide") {
                     guide.closed.toggle()
@@ -59,7 +60,12 @@ struct EditGuideView: View {
         .navigationTitle("Edit Guide")
         .onDisappear(perform: dataController.save)
         .alert(isPresented: $showingDeleteConfirm) {
-            Alert(title: Text("Delete guide?"), message: Text("Are you sure you want to delete this guide? You will also delete all the places it contains."), primaryButton: .default(Text("Delete"), action: delete), secondaryButton: .cancel())
+            Alert(
+                title: Text("Delete guide?"),
+                message: Text("Are you sure you want to delete this guide? You will also delete all the places it contains."), // swiftlint:disable:this line_length
+                primaryButton: .default(Text("Delete"), action: delete),
+                secondaryButton: .cancel()
+            )
         }
     }
 
