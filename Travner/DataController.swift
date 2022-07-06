@@ -18,7 +18,7 @@ class DataController: ObservableObject {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
 
-        container.loadPersistentStores { storeDescription, error in
+        container.loadPersistentStores { _, error in
             if let error = error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
@@ -43,16 +43,16 @@ class DataController: ObservableObject {
     func createSampleData() throws {
         let viewContext = container.viewContext
 
-        for i in 1...5 {
+        for guideCounter in 1...5 {
             let guide = Guide(context: viewContext)
-            guide.title = "Guide \(i)"
+            guide.title = "Guide \(guideCounter)"
             guide.places = []
             guide.creationDate = Date()
             guide.closed = Bool.random()
 
-            for j in 1...10 {
+            for placeCounter in 1...10 {
                 let place = Place(context: viewContext)
-                place.name = "Place \(j)"
+                place.name = "Place \(placeCounter)"
                 place.dateAdded = Date()
                 place.completed = Bool.random()
                 place.guide = guide
@@ -93,7 +93,7 @@ class DataController: ObservableObject {
             let fetchRequest: NSFetchRequest<Place> = NSFetchRequest(entityName: "Place")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
-            
+
         case "complete":
             let fetchRequest: NSFetchRequest<Place> = NSFetchRequest(entityName: "Place")
             fetchRequest.predicate = NSPredicate(format: "completed = true")

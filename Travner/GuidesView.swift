@@ -16,7 +16,7 @@ struct GuidesView: View {
 
     @State private var showingSortOrder = false
     @State private var sortOrder = Place.SortOrder.optimized
-    
+
     let showClosedGuides: Bool
     let guides: FetchRequest<Guide>
 

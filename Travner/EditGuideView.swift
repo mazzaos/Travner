@@ -36,7 +36,7 @@ struct EditGuideView: View {
                 TextField("Guide name", text: $title.onChange(update))
                 TextField("Description of this guide", text: $detail.onChange(update))
             }
-            
+
             Section(header: Text("Custom guide color")) {
                 LazyVGrid(columns: colorColumns) {
                     ForEach(Guide.colors, id: \.self, content: colorButton)

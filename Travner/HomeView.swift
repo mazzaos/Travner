@@ -10,10 +10,15 @@ import SwiftUI
 
 struct HomeView: View {
     static let tag: String? = "Guides"
-    
+
     @EnvironmentObject var dataController: DataController
 
-    @FetchRequest(entity: Guide.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Guide.title, ascending: true)], predicate: NSPredicate(format: "closed = false")) var guides: FetchedResults<Guide>
+    @FetchRequest(
+        entity: Guide.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Guide.title, ascending: true)],
+        predicate: NSPredicate(format: "closed = false")
+    ) var guides: FetchedResults<Guide>
+
     let places: FetchRequest<Place>
 
     var guideRows: [GridItem] {
@@ -62,10 +67,10 @@ struct HomeView: View {
     }
 }
 
-//Button("Add Data") {
+// Button("Add Data") {
 //    dataController.deleteAll()
 //    try? dataController.createSampleData()
-//}
+// }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
