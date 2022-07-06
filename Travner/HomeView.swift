@@ -26,6 +26,7 @@ struct HomeView: View {
     }
 
     init() {
+        // Construct a fetch request to show the 10 highest-priority, incomplete places from open guides.
         let request: NSFetchRequest<Place> = Place.fetchRequest()
 
         let completedPredicate = NSPredicate(format: "completed = false")
