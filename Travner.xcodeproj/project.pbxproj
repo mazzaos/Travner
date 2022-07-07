@@ -39,6 +39,7 @@
 		7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3E2852A259001C61AF /* EditGuideView.swift */; };
 		7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E402852B796001C61AF /* Sequence-Sorting.swift */; };
 		7C560E432852BF37001C61AF /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E422852BF37001C61AF /* SelectSomethingView.swift */; };
+		7C58B4C82876D85300BEDE23 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		7C560E3E2852A259001C61AF /* EditGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGuideView.swift; sourceTree = "<group>"; };
 		7C560E402852B796001C61AF /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		7C560E422852BF37001C61AF /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
+		7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +243,7 @@
 				7C4F27DE287663140038B864 /* GuideTests.swift */,
 				7C4F27E02876642D0038B864 /* AwardTests.swift */,
 				7C4F27E228766B400038B864 /* DevelopmentTests.swift */,
+				7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */,
 			);
 			path = TravnerTests;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				7C4F27DF287663140038B864 /* GuideTests.swift in Sources */,
 				7C4F27E12876642D0038B864 /* AwardTests.swift in Sources */,
 				7C4F27DD28765F830038B864 /* AssetTests.swift in Sources */,
+				7C58B4C82876D85300BEDE23 /* ExtensionTests.swift in Sources */,
 				7C4F27D628765EB90038B864 /* TravnerTests.swift in Sources */,
 				7C4F27E328766B400038B864 /* DevelopmentTests.swift in Sources */,
 			);
