@@ -33,7 +33,7 @@ struct EditGuideView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
-                TextField("Guide name", text: $title.onChange(update))
+                TextField("Guide title", text: $title.onChange(update))
                 TextField("Description of this guide", text: $detail.onChange(update))
             }
 
