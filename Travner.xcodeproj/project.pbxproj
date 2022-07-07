@@ -43,11 +43,19 @@
 		7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */; };
 		7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CC2876DA8900BEDE23 /* DecodableString.json */; };
 		7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */; };
+		7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7C4F27D728765EB90038B864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C324290284413E9004F2150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C324297284413E9004F2150;
+			remoteInfo = Travner;
+		};
+		7C93D1AB287747FB00BF4DEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7C324290284413E9004F2150 /* Project object */;
 			proxyType = 1;
@@ -100,6 +108,8 @@
 		7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		7C58B4CC2876DA8900BEDE23 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerUITests.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C93D1A2287747FB00BF4DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +144,7 @@
 			children = (
 				7C32429A284413E9004F2150 /* Travner */,
 				7C4F27D428765EB90038B864 /* TravnerTests */,
+				7C93D1A6287747FB00BF4DEB /* TravnerUITests */,
 				7C324299284413E9004F2150 /* Products */,
 				7C560E2928526C74001C61AF /* Frameworks */,
 			);
@@ -137,6 +155,7 @@
 			children = (
 				7C324298284413E9004F2150 /* Travner.app */,
 				7C4F27D328765EB90038B864 /* TravnerTests.xctest */,
+				7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +292,14 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		7C93D1A6287747FB00BF4DEB /* TravnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */,
+			);
+			path = TravnerUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +339,24 @@
 			productReference = 7C4F27D328765EB90038B864 /* TravnerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7C93D1A4287747FB00BF4DEB /* TravnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C93D1AF287747FB00BF4DEB /* Build configuration list for PBXNativeTarget "TravnerUITests" */;
+			buildPhases = (
+				7C93D1A1287747FB00BF4DEB /* Sources */,
+				7C93D1A2287747FB00BF4DEB /* Frameworks */,
+				7C93D1A3287747FB00BF4DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C93D1AC287747FB00BF4DEB /* PBXTargetDependency */,
+			);
+			name = TravnerUITests;
+			productName = TravnerUITests;
+			productReference = 7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,6 +371,10 @@
 						CreatedOnToolsVersion = 13.4;
 					};
 					7C4F27D228765EB90038B864 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7C324297284413E9004F2150;
+					};
+					7C93D1A4287747FB00BF4DEB = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 7C324297284413E9004F2150;
 					};
@@ -347,6 +396,7 @@
 			targets = (
 				7C324297284413E9004F2150 /* Travner */,
 				7C4F27D228765EB90038B864 /* TravnerTests */,
+				7C93D1A4287747FB00BF4DEB /* TravnerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,6 +421,13 @@
 			files = (
 				7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */,
 				7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C93D1A3287747FB00BF4DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +496,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C93D1A1287747FB00BF4DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -446,6 +511,11 @@
 			isa = PBXTargetDependency;
 			target = 7C324297284413E9004F2150 /* Travner */;
 			targetProxy = 7C4F27D728765EB90038B864 /* PBXContainerItemProxy */;
+		};
+		7C93D1AC287747FB00BF4DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C324297284413E9004F2150 /* Travner */;
+			targetProxy = 7C93D1AB287747FB00BF4DEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -700,6 +770,42 @@
 			};
 			name = Release;
 		};
+		7C93D1AD287747FB00BF4DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GPC52S3LY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Travner;
+			};
+			name = Debug;
+		};
+		7C93D1AE287747FB00BF4DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GPC52S3LY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Travner;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -726,6 +832,15 @@
 			buildConfigurations = (
 				7C4F27DA28765EB90038B864 /* Debug */,
 				7C4F27DB28765EB90038B864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C93D1AF287747FB00BF4DEB /* Build configuration list for PBXNativeTarget "TravnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C93D1AD287747FB00BF4DEB /* Debug */,
+				7C93D1AE287747FB00BF4DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
