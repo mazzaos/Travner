@@ -39,6 +39,16 @@
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7C4F27D228765EB90038B864"
+               BuildableName = "TravnerTests.xctest"
+               BlueprintName = "TravnerTests"
+               ReferencedContainer = "container:Travner.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
