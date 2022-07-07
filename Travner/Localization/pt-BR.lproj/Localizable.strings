@@ -58,7 +58,7 @@
 
 /* EDITING GUIDES */
 "Edit Guide" = "Editar Guia";
-"Guide name" = "Nome do Guia";
+"Guide title" = "Título do Guia";
 "Description of this guide" = "Descrição deste guia";
 "Custom guide color" = "Cor customizada do guia";
 

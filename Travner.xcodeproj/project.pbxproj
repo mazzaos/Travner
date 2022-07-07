@@ -14,6 +14,11 @@
 		7C32429E284413E9004F2150 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C32429D284413E9004F2150 /* ContentView.swift */; };
 		7C3242A0284413F0004F2150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C32429F284413F0004F2150 /* Assets.xcassets */; };
 		7C3242A3284413F0004F2150 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3242A2284413F0004F2150 /* Preview Assets.xcassets */; };
+		7C4F27D628765EB90038B864 /* TravnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27D528765EB90038B864 /* TravnerTests.swift */; };
+		7C4F27DD28765F830038B864 /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27DC28765F830038B864 /* AssetTests.swift */; };
+		7C4F27DF287663140038B864 /* GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27DE287663140038B864 /* GuideTests.swift */; };
+		7C4F27E12876642D0038B864 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27E02876642D0038B864 /* AwardTests.swift */; };
+		7C4F27E328766B400038B864 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27E228766B400038B864 /* DevelopmentTests.swift */; };
 		7C500A542867704E00D6EC60 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C500A532867704E00D6EC60 /* PlaceListView.swift */; };
 		7C500A562867712900D6EC60 /* GuideSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C500A552867712900D6EC60 /* GuideSummaryView.swift */; };
 		7C5586EE285F00690001029D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C5586F0285F00690001029D /* Localizable.strings */; };
@@ -34,8 +39,30 @@
 		7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E3E2852A259001C61AF /* EditGuideView.swift */; };
 		7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E402852B796001C61AF /* Sequence-Sorting.swift */; };
 		7C560E432852BF37001C61AF /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E422852BF37001C61AF /* SelectSomethingView.swift */; };
+		7C58B4C82876D85300BEDE23 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */; };
+		7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */; };
+		7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CC2876DA8900BEDE23 /* DecodableString.json */; };
+		7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */; };
+		7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C4F27D728765EB90038B864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C324290284413E9004F2150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C324297284413E9004F2150;
+			remoteInfo = Travner;
+		};
+		7C93D1AB287747FB00BF4DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C324290284413E9004F2150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C324297284413E9004F2150;
+			remoteInfo = Travner;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7C275DA72852CB0F001668CD /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -46,6 +73,12 @@
 		7C32429D284413E9004F2150 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C32429F284413F0004F2150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C3242A2284413F0004F2150 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C4F27D328765EB90038B864 /* TravnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4F27D528765EB90038B864 /* TravnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerTests.swift; sourceTree = "<group>"; };
+		7C4F27DC28765F830038B864 /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
+		7C4F27DE287663140038B864 /* GuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTests.swift; sourceTree = "<group>"; };
+		7C4F27E02876642D0038B864 /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
+		7C4F27E228766B400038B864 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		7C500A532867704E00D6EC60 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		7C500A552867712900D6EC60 /* GuideSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryView.swift; sourceTree = "<group>"; };
 		7C5586EF285F00690001029D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -71,6 +104,12 @@
 		7C560E3E2852A259001C61AF /* EditGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGuideView.swift; sourceTree = "<group>"; };
 		7C560E402852B796001C61AF /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		7C560E422852BF37001C61AF /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
+		7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		7C58B4CC2876DA8900BEDE23 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
+		7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerUITests.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +122,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C4F27D028765EB90038B864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C93D1A2287747FB00BF4DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				7C32429A284413E9004F2150 /* Travner */,
+				7C4F27D428765EB90038B864 /* TravnerTests */,
+				7C93D1A6287747FB00BF4DEB /* TravnerUITests */,
 				7C324299284413E9004F2150 /* Products */,
 				7C560E2928526C74001C61AF /* Frameworks */,
 			);
@@ -99,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				7C324298284413E9004F2150 /* Travner.app */,
+				7C4F27D328765EB90038B864 /* TravnerTests.xctest */,
+				7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,12 +260,44 @@
 			path = Awards;
 			sourceTree = "<group>";
 		};
+		7C4F27D428765EB90038B864 /* TravnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C58B4C92876DA5B00BEDE23 /* Fixtures */,
+				7C4F27D528765EB90038B864 /* TravnerTests.swift */,
+				7C4F27DC28765F830038B864 /* AssetTests.swift */,
+				7C4F27DE287663140038B864 /* GuideTests.swift */,
+				7C4F27E02876642D0038B864 /* AwardTests.swift */,
+				7C4F27E228766B400038B864 /* DevelopmentTests.swift */,
+				7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */,
+				7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */,
+			);
+			path = TravnerTests;
+			sourceTree = "<group>";
+		};
 		7C560E2928526C74001C61AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7C560E2A28526C74001C61AF /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C58B4C92876DA5B00BEDE23 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */,
+				7C58B4CC2876DA8900BEDE23 /* DecodableString.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		7C93D1A6287747FB00BF4DEB /* TravnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */,
+			);
+			path = TravnerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +321,42 @@
 			productReference = 7C324298284413E9004F2150 /* Travner.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7C4F27D228765EB90038B864 /* TravnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C4F27D928765EB90038B864 /* Build configuration list for PBXNativeTarget "TravnerTests" */;
+			buildPhases = (
+				7C4F27CF28765EB90038B864 /* Sources */,
+				7C4F27D028765EB90038B864 /* Frameworks */,
+				7C4F27D128765EB90038B864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C4F27D828765EB90038B864 /* PBXTargetDependency */,
+			);
+			name = TravnerTests;
+			productName = TravnerTests;
+			productReference = 7C4F27D328765EB90038B864 /* TravnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C93D1A4287747FB00BF4DEB /* TravnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C93D1AF287747FB00BF4DEB /* Build configuration list for PBXNativeTarget "TravnerUITests" */;
+			buildPhases = (
+				7C93D1A1287747FB00BF4DEB /* Sources */,
+				7C93D1A2287747FB00BF4DEB /* Frameworks */,
+				7C93D1A3287747FB00BF4DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C93D1AC287747FB00BF4DEB /* PBXTargetDependency */,
+			);
+			name = TravnerUITests;
+			productName = TravnerUITests;
+			productReference = 7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +369,14 @@
 				TargetAttributes = {
 					7C324297284413E9004F2150 = {
 						CreatedOnToolsVersion = 13.4;
+					};
+					7C4F27D228765EB90038B864 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7C324297284413E9004F2150;
+					};
+					7C93D1A4287747FB00BF4DEB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7C324297284413E9004F2150;
 					};
 				};
 			};
@@ -262,6 +395,8 @@
 			projectRoot = "";
 			targets = (
 				7C324297284413E9004F2150 /* Travner */,
+				7C4F27D228765EB90038B864 /* TravnerTests */,
+				7C93D1A4287747FB00BF4DEB /* TravnerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +412,22 @@
 				7C3242A3284413F0004F2150 /* Preview Assets.xcassets in Resources */,
 				7C3242A0284413F0004F2150 /* Assets.xcassets in Resources */,
 				7C5586F4285F09ED0001029D /* Localizable.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4F27D128765EB90038B864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */,
+				7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C93D1A3287747FB00BF4DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +482,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C4F27CF28765EB90038B864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */,
+				7C4F27DF287663140038B864 /* GuideTests.swift in Sources */,
+				7C4F27E12876642D0038B864 /* AwardTests.swift in Sources */,
+				7C4F27DD28765F830038B864 /* AssetTests.swift in Sources */,
+				7C58B4C82876D85300BEDE23 /* ExtensionTests.swift in Sources */,
+				7C4F27D628765EB90038B864 /* TravnerTests.swift in Sources */,
+				7C4F27E328766B400038B864 /* DevelopmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C93D1A1287747FB00BF4DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C4F27D828765EB90038B864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C324297284413E9004F2150 /* Travner */;
+			targetProxy = 7C4F27D728765EB90038B864 /* PBXContainerItemProxy */;
+		};
+		7C93D1AC287747FB00BF4DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C324297284413E9004F2150 /* Travner */;
+			targetProxy = 7C93D1AB287747FB00BF4DEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7C5586F0285F00690001029D /* Localizable.strings */ = {
@@ -546,6 +732,80 @@
 			};
 			name = Release;
 		};
+		7C4F27DA28765EB90038B864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GPC52S3LY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travner.app/Travner";
+			};
+			name = Debug;
+		};
+		7C4F27DB28765EB90038B864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GPC52S3LY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travner.app/Travner";
+			};
+			name = Release;
+		};
+		7C93D1AD287747FB00BF4DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GPC52S3LY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Travner;
+			};
+			name = Debug;
+		};
+		7C93D1AE287747FB00BF4DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GPC52S3LY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Travner;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,6 +823,24 @@
 			buildConfigurations = (
 				7C3242A7284413F0004F2150 /* Debug */,
 				7C3242A8284413F0004F2150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C4F27D928765EB90038B864 /* Build configuration list for PBXNativeTarget "TravnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4F27DA28765EB90038B864 /* Debug */,
+				7C4F27DB28765EB90038B864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C93D1AF287747FB00BF4DEB /* Build configuration list for PBXNativeTarget "TravnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C93D1AD287747FB00BF4DEB /* Debug */,
+				7C93D1AE287747FB00BF4DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
