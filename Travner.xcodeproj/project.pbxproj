@@ -40,6 +40,8 @@
 		7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E402852B796001C61AF /* Sequence-Sorting.swift */; };
 		7C560E432852BF37001C61AF /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560E422852BF37001C61AF /* SelectSomethingView.swift */; };
 		7C58B4C82876D85300BEDE23 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */; };
+		7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */; };
+		7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CC2876DA8900BEDE23 /* DecodableString.json */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		7C560E402852B796001C61AF /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		7C560E422852BF37001C61AF /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		7C58B4CC2876DA8900BEDE23 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +242,7 @@
 		7C4F27D428765EB90038B864 /* TravnerTests */ = {
 			isa = PBXGroup;
 			children = (
+				7C58B4C92876DA5B00BEDE23 /* Fixtures */,
 				7C4F27D528765EB90038B864 /* TravnerTests.swift */,
 				7C4F27DC28765F830038B864 /* AssetTests.swift */,
 				7C4F27DE287663140038B864 /* GuideTests.swift */,
@@ -254,6 +259,15 @@
 				7C560E2A28526C74001C61AF /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C58B4C92876DA5B00BEDE23 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */,
+				7C58B4CC2876DA8900BEDE23 /* DecodableString.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */,
+				7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
