@@ -44,6 +44,7 @@
 		7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CC2876DA8900BEDE23 /* DecodableString.json */; };
 		7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */; };
 		7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */; };
+		7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerUITests.swift; sourceTree = "<group>"; };
+		7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewModel.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				7C560E2E2852778A001C61AF /* GuidesView.swift */,
+				7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */,
 				7C560E422852BF37001C61AF /* SelectSomethingView.swift */,
 				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
 				7C560E36285298FC001C61AF /* PlaceRowView.swift */,
@@ -475,6 +478,7 @@
 				7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */,
 				7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */,
 				7C275DA82852CB0F001668CD /* Bundle-Decodable.swift in Sources */,
+				7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */,
 				7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */,
 				7C560E37285298FC001C61AF /* PlaceRowView.swift in Sources */,
 				7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */,
