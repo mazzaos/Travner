@@ -42,6 +42,7 @@
 		7C58B4C82876D85300BEDE23 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */; };
 		7C58B4CB2876DA7600BEDE23 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */; };
 		7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CC2876DA8900BEDE23 /* DecodableString.json */; };
+		7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		7C58B4CA2876DA7600BEDE23 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		7C58B4CC2876DA8900BEDE23 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
+		7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +251,7 @@
 				7C4F27E02876642D0038B864 /* AwardTests.swift */,
 				7C4F27E228766B400038B864 /* DevelopmentTests.swift */,
 				7C58B4C72876D85300BEDE23 /* ExtensionTests.swift */,
+				7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */,
 			);
 			path = TravnerTests;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */,
 				7C4F27DF287663140038B864 /* GuideTests.swift in Sources */,
 				7C4F27E12876642D0038B864 /* AwardTests.swift in Sources */,
 				7C4F27DD28765F830038B864 /* AssetTests.swift in Sources */,
