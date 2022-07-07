@@ -15,6 +15,7 @@
 		7C3242A0284413F0004F2150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C32429F284413F0004F2150 /* Assets.xcassets */; };
 		7C3242A3284413F0004F2150 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3242A2284413F0004F2150 /* Preview Assets.xcassets */; };
 		7C4F27D628765EB90038B864 /* TravnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27D528765EB90038B864 /* TravnerTests.swift */; };
+		7C4F27DD28765F830038B864 /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F27DC28765F830038B864 /* AssetTests.swift */; };
 		7C500A542867704E00D6EC60 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C500A532867704E00D6EC60 /* PlaceListView.swift */; };
 		7C500A562867712900D6EC60 /* GuideSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C500A552867712900D6EC60 /* GuideSummaryView.swift */; };
 		7C5586EE285F00690001029D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C5586F0285F00690001029D /* Localizable.strings */; };
@@ -59,6 +60,7 @@
 		7C3242A2284413F0004F2150 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C4F27D328765EB90038B864 /* TravnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4F27D528765EB90038B864 /* TravnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerTests.swift; sourceTree = "<group>"; };
+		7C4F27DC28765F830038B864 /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
 		7C500A532867704E00D6EC60 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		7C500A552867712900D6EC60 /* GuideSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryView.swift; sourceTree = "<group>"; };
 		7C5586EF285F00690001029D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				7C4F27D528765EB90038B864 /* TravnerTests.swift */,
+				7C4F27DC28765F830038B864 /* AssetTests.swift */,
 			);
 			path = TravnerTests;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4F27DD28765F830038B864 /* AssetTests.swift in Sources */,
 				7C4F27D628765EB90038B864 /* TravnerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
