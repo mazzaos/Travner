@@ -24,4 +24,14 @@ class DevelopmentTests: BaseTestCase {
         XCTAssertEqual(dataController.count(for: Guide.fetchRequest()), 0, "deleteAll() should leave 0 guides.")
         XCTAssertEqual(dataController.count(for: Place.fetchRequest()), 0, "deleteAll() should leave 0 places.")
     }
+
+    func testExampleGuideIsClosed() {
+        let guide = Guide.example
+        XCTAssertTrue(guide.closed, "The example guide should be closed.")
+    }
+
+    func testExamplePlaceIsHighPriority() {
+        let place = Place.example
+        XCTAssertEqual(place.priority, 3, "The example place should be high priority.")
+    }
 }
