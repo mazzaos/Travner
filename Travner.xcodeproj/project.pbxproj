@@ -44,6 +44,7 @@
 		7C58B4CD2876DA8900BEDE23 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C58B4CC2876DA8900BEDE23 /* DecodableString.json */; };
 		7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */; };
 		7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */; };
+		7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerUITests.swift; sourceTree = "<group>"; };
+		7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewModel.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				7C560E2E2852778A001C61AF /* GuidesView.swift */,
+				7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */,
 				7C560E422852BF37001C61AF /* SelectSomethingView.swift */,
 				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
 				7C560E36285298FC001C61AF /* PlaceRowView.swift */,
@@ -475,6 +478,7 @@
 				7C560E2F2852778A001C61AF /* GuidesView.swift in Sources */,
 				7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */,
 				7C275DA82852CB0F001668CD /* Bundle-Decodable.swift in Sources */,
+				7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */,
 				7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */,
 				7C560E37285298FC001C61AF /* PlaceRowView.swift in Sources */,
 				7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */,
@@ -673,7 +677,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Travner/Configuration/Travner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travner/Preview Content\"";
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				ENABLE_PREVIEWS = YES;
@@ -690,7 +694,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.Travner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -706,7 +710,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Travner/Configuration/Travner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travner/Preview Content\"";
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				ENABLE_PREVIEWS = YES;
@@ -723,7 +727,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.Travner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -740,13 +744,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travner.app/Travner";
 			};
 			name = Debug;
@@ -759,13 +763,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Travner.app/Travner";
 			};
 			name = Release;
@@ -777,13 +781,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Travner;
 			};
 			name = Debug;
@@ -795,13 +799,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2GPC52S3LY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.mazzaos.TravnerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Travner;
 			};
 			name = Release;

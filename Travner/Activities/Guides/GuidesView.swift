@@ -11,37 +11,25 @@ struct GuidesView: View {
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
 
-    @EnvironmentObject var dataController: DataController
-    @Environment(\.managedObjectContext) var managedObjectContext
-
+    @StateObject var viewModel: ViewModel
     @State private var showingSortOrder = false
-    @State private var sortOrder = Place.SortOrder.optimized
-
-    let showClosedGuides: Bool
-    let guides: FetchRequest<Guide>
-
-    init(showClosedGuides: Bool) {
-        self.showClosedGuides = showClosedGuides
-
-        guides = FetchRequest<Guide>(entity: Guide.entity(), sortDescriptors: [
-            NSSortDescriptor(keyPath: \Guide.creationDate, ascending: false)
-        ], predicate: NSPredicate(format: "closed = %d", showClosedGuides))
-    }
 
     var guidesList: some View {
         List {
-            ForEach(guides.wrappedValue) { guide in
+            ForEach(viewModel.guides) { guide in
                 Section(header: GuideHeaderView(guide: guide)) {
-                    ForEach(guide.guidePlaces(using: sortOrder)) { place in
+                    ForEach(guide.guidePlaces(using: viewModel.sortOrder)) { place in
                         PlaceRowView(guide: guide, place: place)
                     }
                     .onDelete { offsets in
-                        delete(offsets, from: guide)
+                        viewModel.delete(offsets, from: guide)
                     }
 
-                    if showClosedGuides == false {
+                    if viewModel.showClosedGuides == false {
                         Button {
-                            addPlace(to: guide)
+                            withAnimation {
+                                viewModel.addPlace(to: guide)
+                            }
                         } label: {
                             Label("Add New Place", systemImage: "plus")
                         }
@@ -54,9 +42,11 @@ struct GuidesView: View {
 
     var addGuideToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
-            if showClosedGuides == false {
+            if viewModel.showClosedGuides == false {
                 Button {
-                    addGuide()
+                    withAnimation {
+                        viewModel.addGuide()
+                    }
                 } label: {
                     Label("Add Guide", systemImage: "plus")
                 }
@@ -77,23 +67,23 @@ struct GuidesView: View {
     var body: some View {
         NavigationView {
             Group {
-                if guides.wrappedValue.isEmpty {
+                if viewModel.guides.isEmpty {
                     Text("There's nothing here right now.")
                         .foregroundColor(.secondary)
                 } else {
                     guidesList
                 }
             }
-            .navigationTitle(showClosedGuides ? "Closed Guides" : "Open Guides")
+            .navigationTitle(viewModel.showClosedGuides ? "Closed Guides" : "Open Guides")
             .toolbar {
                 addGuideToolbarItem
                 sortOrderToolbarItem
             }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort places by:"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortOrder = .optimized },
-                    .default(Text("Date Added")) { sortOrder = .dateAdded },
-                    .default(Text("Name")) { sortOrder = .name },
+                    .default(Text("Optimized")) { viewModel.sortOrder = .optimized },
+                    .default(Text("Date Added")) { viewModel.sortOrder = .dateAdded },
+                    .default(Text("Name")) { viewModel.sortOrder = .name },
                     .cancel()
                 ])
             }
@@ -102,35 +92,9 @@ struct GuidesView: View {
         }
     }
 
-    func addGuide() {
-        withAnimation {
-            let guide = Guide(context: managedObjectContext)
-            guide.closed = false
-            guide.creationDate = Date()
-            dataController.save()
-        }
-    }
-
-    func addPlace(to guide: Guide) {
-        withAnimation {
-            let place = Place(context: managedObjectContext)
-            place.guide = guide
-            place.priority = 2
-            place.completed = false
-            place.dateAdded = Date()
-            dataController.save()
-        }
-    }
-
-    func delete(_ offsets: IndexSet, from guide: Guide) {
-        let allPlaces = guide.guidePlaces(using: sortOrder)
-
-        for offset in offsets {
-            let place = allPlaces[offset]
-            dataController.delete(place)
-        }
-
-        dataController.save()
+    init(dataController: DataController, showClosedGuides: Bool) {
+        let viewModel = ViewModel(dataController: dataController, showClosedGuides: showClosedGuides)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
 }
 
@@ -138,8 +102,6 @@ struct GuidesView_Previews: PreviewProvider {
     static var dataController = DataController.preview
 
     static var previews: some View {
-        GuidesView(showClosedGuides: false)
-            .environment(\.managedObjectContext, dataController.container.viewContext)
-            .environmentObject(dataController)
+        GuidesView(dataController: DataController.preview, showClosedGuides: false)
     }
 }
