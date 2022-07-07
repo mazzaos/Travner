@@ -75,7 +75,7 @@ extension Guide {
     }
 
     static var example: Guide {
-        let controller = DataController.preview
+        let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
 
         let guide = Guide(context: viewContext)
