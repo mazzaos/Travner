@@ -55,7 +55,8 @@ class ExtensionTests: XCTestCase {
         XCTAssertEqual(data["One"], 1, "The dictionary should contain Int to String mappings.")
     }
 
-    func testBindingOnChange() {
+    func testBindingOnChangeCallsFunction() {
+        // Given
         var onChangeFunctionRun = false
 
         func exampleFunctionToCall() {
@@ -70,8 +71,11 @@ class ExtensionTests: XCTestCase {
         )
 
         let changedBinding = binding.onChange(exampleFunctionToCall)
+
+        // When
         changedBinding.wrappedValue = "Test"
 
+        // Then
         XCTAssertTrue(onChangeFunctionRun, "The onChange() function was not run.")
     }
 }
