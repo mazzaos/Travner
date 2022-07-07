@@ -25,7 +25,7 @@ extension Place {
     }
 
     static var example: Place {
-        let controller = DataController(inMemory: true)
+        let controller = DataController.preview
         let viewContext = controller.container.viewContext
 
         let place = Place(context: viewContext)
