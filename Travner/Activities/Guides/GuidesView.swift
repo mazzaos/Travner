@@ -16,7 +16,7 @@ struct GuidesView: View {
 
     var guidesList: some View {
         List {
-            ForEach(viewModel.guides.wrappedValue) { guide in
+            ForEach(viewModel.guides) { guide in
                 Section(header: GuideHeaderView(guide: guide)) {
                     ForEach(guide.guidePlaces(using: viewModel.sortOrder)) { place in
                         PlaceRowView(guide: guide, place: place)
@@ -27,7 +27,9 @@ struct GuidesView: View {
 
                     if viewModel.showClosedGuides == false {
                         Button {
-                            viewModel.addPlace(to: guide)
+                            withAnimation {
+                                viewModel.addPlace(to: guide)
+                            }
                         } label: {
                             Label("Add New Place", systemImage: "plus")
                         }
@@ -42,7 +44,9 @@ struct GuidesView: View {
         ToolbarItem(placement: .navigationBarTrailing) {
             if viewModel.showClosedGuides == false {
                 Button {
-                    viewModel.addGuide()
+                    withAnimation {
+                        viewModel.addGuide()
+                    }
                 } label: {
                     Label("Add Guide", systemImage: "plus")
                 }
@@ -63,7 +67,7 @@ struct GuidesView: View {
     var body: some View {
         NavigationView {
             Group {
-                if viewModel.guides.wrappedValue.isEmpty {
+                if viewModel.guides.isEmpty {
                     Text("There's nothing here right now.")
                         .foregroundColor(.secondary)
                 } else {

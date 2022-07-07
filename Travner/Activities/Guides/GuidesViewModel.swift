@@ -7,23 +7,47 @@
 
 import CoreData
 import Foundation
-import SwiftUI
 
 extension GuidesView {
-    class ViewModel: ObservableObject {
+    class ViewModel: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
         let dataController: DataController
 
         var sortOrder = Place.SortOrder.optimized
         let showClosedGuides: Bool
-        let guides: FetchRequest<Guide>
+
+        private let guidesController: NSFetchedResultsController<Guide>
+        @Published var guides = [Guide]()
 
         init(dataController: DataController, showClosedGuides: Bool) {
             self.dataController = dataController
             self.showClosedGuides = showClosedGuides
 
-            guides = FetchRequest<Guide>(entity: Guide.entity(), sortDescriptors: [
-                NSSortDescriptor(keyPath: \Guide.creationDate, ascending: false)
-            ], predicate: NSPredicate(format: "closed = %d", showClosedGuides))
+            let request: NSFetchRequest<Guide> = Guide.fetchRequest()
+            request.sortDescriptors = [NSSortDescriptor(keyPath: \Guide.creationDate, ascending: false)]
+            request.predicate = NSPredicate(format: "closed = %d", showClosedGuides)
+
+            guidesController = NSFetchedResultsController(
+                fetchRequest: request,
+                managedObjectContext: dataController.container.viewContext,
+                sectionNameKeyPath: nil,
+                cacheName: nil
+            )
+
+            super.init()
+            guidesController.delegate = self
+
+            do {
+                try guidesController.performFetch()
+                guides = guidesController.fetchedObjects ?? []
+            } catch {
+                print("Failed to fetch guides")
+            }
+        }
+
+        func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+            if let newGuides = controller.fetchedObjects as? [Guide] {
+                guides = newGuides
+            }
         }
 
         func addGuide() {
