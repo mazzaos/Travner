@@ -16,4 +16,12 @@ class DevelopmentTests: BaseTestCase {
         XCTAssertEqual(dataController.count(for: Guide.fetchRequest()), 5, "There should be 5 sample guides.")
         XCTAssertEqual(dataController.count(for: Place.fetchRequest()), 50, "There should be 50 sample places.")
     }
+
+    func testDeleteAllClearsEverything() throws {
+        try dataController.createSampleData()
+        dataController.deleteAll()
+
+        XCTAssertEqual(dataController.count(for: Guide.fetchRequest()), 0, "deleteAll() should leave 0 guides.")
+        XCTAssertEqual(dataController.count(for: Place.fetchRequest()), 0, "deleteAll() should leave 0 places.")
+    }
 }

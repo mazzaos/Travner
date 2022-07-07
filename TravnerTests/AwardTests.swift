@@ -24,15 +24,12 @@ class AwardTests: BaseTestCase {
         }
     }
 
-    func testPlaceAwards() throws {
+    func testAddingPlaces() {
         let values = [1, 10, 20, 50, 100, 250, 500, 1000]
 
         for (count, value) in values.enumerated() {
-            var places = [Place]()
-
             for _ in 0..<value {
-                let place = Place(context: managedObjectContext)
-                places.append(place)
+                _ = Place(context: managedObjectContext)
             }
 
             let matches = awards.filter { award in
@@ -41,22 +38,17 @@ class AwardTests: BaseTestCase {
 
             XCTAssertEqual(matches.count, count + 1, "Adding \(value) places should unlock \(count + 1) awards.")
 
-            for place in places {
-                dataController.delete(place)
-            }
+            dataController.deleteAll()
         }
     }
 
-    func testCompletedAwards() throws {
+    func testCompletingPlaces() {
         let values = [1, 10, 20, 50, 100, 250, 500, 1000]
 
         for (count, value) in values.enumerated() {
-            var places = [Place]()
-
             for _ in 0..<value {
                 let place = Place(context: managedObjectContext)
                 place.completed = true
-                places.append(place)
             }
 
             let matches = awards.filter { award in
@@ -65,9 +57,7 @@ class AwardTests: BaseTestCase {
 
             XCTAssertEqual(matches.count, count + 1, "Completing \(value) places should unlock \(count + 1) awards.")
 
-            for place in places {
-                dataController.delete(place)
-            }
+            dataController.deleteAll()
         }
     }
 }
