@@ -1,7 +1,7 @@
 [
     {
         "name": "Primeiros Passos",
-        "description": "Adicione your first place.",
+        "description": "Adicione seu primeiro lugar.",
         "color": "Light Blue",
         "criterion": "places",
         "value": 1,
@@ -65,7 +65,7 @@
     },
     {
         "name": "Caixas de Seleção",
-        "description": "Complete your first place.",
+        "description": "Complete seu primeiro lugar.",
         "color": "Orange",
         "criterion": "complete",
         "value": 1,

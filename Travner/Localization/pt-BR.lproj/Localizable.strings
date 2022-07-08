@@ -39,7 +39,7 @@
 "Closed Guides" = "Guias Fechados";
 "Add Guide" = "Adicionar Guia";
 "Add New Place" = "Adicionar Novo Lugar";
-"There's nothing here right now." = "Não tem nada aqui agora.";
+"There's nothing here right now." = "Não há nada aqui agora.";
 
 /* A button that shows a menu with the following options */
 "Sort places by:" = "Classificar lugares por:"; /* The title of the menu */
@@ -94,7 +94,7 @@
 "Medium" = "Média";
 "High" = "Alta";
 
-"Mark Completed" = "Marca Concluído"; /* Mark this place as being completed (finished/accomplished) */
+"Mark Completed" = "Marcar Concluído"; /* Mark this place as being completed (finished/accomplished) */
 
 
 
