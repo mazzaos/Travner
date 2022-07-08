@@ -46,6 +46,7 @@
 		7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */; };
 		7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */; };
 		7CDCF0C928784241002ABE4F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDCF0C828784241002ABE4F /* HomeViewModel.swift */; };
+		7CDCF0CB2878BD9E002ABE4F /* PlaceRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDCF0CA2878BD9E002ABE4F /* PlaceRowViewModel.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerUITests.swift; sourceTree = "<group>"; };
 		7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewModel.swift; sourceTree = "<group>"; };
 		7CDCF0C828784241002ABE4F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7CDCF0CA2878BD9E002ABE4F /* PlaceRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRowViewModel.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +252,7 @@
 				7C560E422852BF37001C61AF /* SelectSomethingView.swift */,
 				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
 				7C560E36285298FC001C61AF /* PlaceRowView.swift */,
+				7CDCF0CA2878BD9E002ABE4F /* PlaceRowViewModel.swift */,
 				7C560E3E2852A259001C61AF /* EditGuideView.swift */,
 				7C560E34285297DC001C61AF /* EditPlaceView.swift */,
 			);
@@ -483,6 +486,7 @@
 				7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */,
 				7C275DA82852CB0F001668CD /* Bundle-Decodable.swift in Sources */,
 				7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */,
+				7CDCF0CB2878BD9E002ABE4F /* PlaceRowViewModel.swift in Sources */,
 				7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */,
 				7C560E37285298FC001C61AF /* PlaceRowView.swift in Sources */,
 				7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */,
