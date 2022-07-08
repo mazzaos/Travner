@@ -8,41 +8,26 @@
 import SwiftUI
 
 struct PlaceRowView: View {
-    @ObservedObject var guide: Guide
+    @StateObject var viewModel: ViewModel
     @ObservedObject var place: Place
 
-    var icon: some View {
-        if place.completed {
-            return Image(systemName: "checkmark.circle")
-                .foregroundColor(Color(guide.guideColor))
-        } else if place.priority == 3 {
-            return Image(systemName: "exclamationmark.triangle")
-                .foregroundColor(Color(guide.guideColor))
-        } else {
-            return Image(systemName: "checkmark.circle")
-                .foregroundColor(.clear)
-        }
-    }
+    init(guide: Guide, place: Place) {
+        let viewModel = ViewModel(guide: guide, place: place)
+        _viewModel = StateObject(wrappedValue: viewModel)
 
-    var label: Text {
-        if place.completed {
-            return Text("\(place.placeName), completed.")
-        } else if place.priority == 3 {
-            return Text("\(place.placeName), high priority.")
-        } else {
-            return Text(place.placeName)
-        }
+        self.place = place
     }
 
     var body: some View {
         NavigationLink(destination: EditPlaceView(place: place)) {
             Label {
-                Text(place.placeName)
+                Text(viewModel.name)
             } icon: {
-                icon
+                Image(systemName: viewModel.icon)
+                    .foregroundColor(viewModel.color.map { Color($0) } ?? .clear)
             }
-            .accessibilityLabel(label)
         }
+        .accessibilityLabel(viewModel.label)
     }
 }
 

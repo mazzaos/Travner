@@ -45,6 +45,8 @@
 		7C58B4CF2876EB2200BEDE23 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58B4CE2876EB2200BEDE23 /* PerformanceTests.swift */; };
 		7C93D1A8287747FB00BF4DEB /* TravnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */; };
 		7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */; };
+		7CDCF0C928784241002ABE4F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDCF0C828784241002ABE4F /* HomeViewModel.swift */; };
+		7CDCF0CB2878BD9E002ABE4F /* PlaceRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDCF0CA2878BD9E002ABE4F /* PlaceRowViewModel.swift */; };
 		7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60F3D2853481B002CAEBA /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		7C93D1A5287747FB00BF4DEB /* TravnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C93D1A7287747FB00BF4DEB /* TravnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravnerUITests.swift; sourceTree = "<group>"; };
 		7C93D1B02877934D00BF4DEB /* GuidesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewModel.swift; sourceTree = "<group>"; };
+		7CDCF0C828784241002ABE4F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7CDCF0CA2878BD9E002ABE4F /* PlaceRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRowViewModel.swift; sourceTree = "<group>"; };
 		7CF60F3D2853481B002CAEBA /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				7C560E2C28527472001C61AF /* HomeView.swift */,
+				7CDCF0C828784241002ABE4F /* HomeViewModel.swift */,
 				7C500A532867704E00D6EC60 /* PlaceListView.swift */,
 				7C500A552867712900D6EC60 /* GuideSummaryView.swift */,
 			);
@@ -247,6 +252,7 @@
 				7C560E422852BF37001C61AF /* SelectSomethingView.swift */,
 				7C560E3A2852A101001C61AF /* GuideHeaderView.swift */,
 				7C560E36285298FC001C61AF /* PlaceRowView.swift */,
+				7CDCF0CA2878BD9E002ABE4F /* PlaceRowViewModel.swift */,
 				7C560E3E2852A259001C61AF /* EditGuideView.swift */,
 				7C560E34285297DC001C61AF /* EditPlaceView.swift */,
 			);
@@ -466,6 +472,7 @@
 				7C560E26285259F9001C61AF /* DataController.swift in Sources */,
 				7C500A542867704E00D6EC60 /* PlaceListView.swift in Sources */,
 				7C275DAE2852CB88001668CD /* AwardsView.swift in Sources */,
+				7CDCF0C928784241002ABE4F /* HomeViewModel.swift in Sources */,
 				7C560E3B2852A101001C61AF /* GuideHeaderView.swift in Sources */,
 				7C32429E284413E9004F2150 /* ContentView.swift in Sources */,
 				7CF60F3E2853481B002CAEBA /* Color-Additions.swift in Sources */,
@@ -479,6 +486,7 @@
 				7C560E412852B796001C61AF /* Sequence-Sorting.swift in Sources */,
 				7C275DA82852CB0F001668CD /* Bundle-Decodable.swift in Sources */,
 				7C93D1B12877934E00BF4DEB /* GuidesViewModel.swift in Sources */,
+				7CDCF0CB2878BD9E002ABE4F /* PlaceRowViewModel.swift in Sources */,
 				7C560E3F2852A259001C61AF /* EditGuideView.swift in Sources */,
 				7C560E37285298FC001C61AF /* PlaceRowView.swift in Sources */,
 				7C560E35285297DC001C61AF /* EditPlaceView.swift in Sources */,
