@@ -43,14 +43,13 @@ struct HomeView: View {
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("My Guides")
-            .toolbar {
-                Button("Add Data", action: viewModel.addSampleData)
-            }
         }
     }
 }
 
-// Button("Add Data", action: viewModel.addSampleData)
+// .toolbar {
+//     Button("Add Data", action: viewModel.addSampleData)
+// }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
