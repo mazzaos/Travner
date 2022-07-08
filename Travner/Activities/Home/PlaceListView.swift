@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlaceListView: View {
     let title: LocalizedStringKey
-    let places: FetchedResults<Place>.SubSequence
+    let places: ArraySlice<Place>
 
     var body: some View {
         if places.isEmpty {

@@ -11,36 +11,15 @@ import SwiftUI
 struct HomeView: View {
     static let tag: String? = "Guides"
 
-    @EnvironmentObject var dataController: DataController
-
-    @FetchRequest(
-        entity: Guide.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Guide.title, ascending: true)],
-        predicate: NSPredicate(format: "closed = false")
-    ) var guides: FetchedResults<Guide>
-
-    let places: FetchRequest<Place>
+    @StateObject var viewModel: ViewModel
 
     var guideRows: [GridItem] {
         [GridItem(.fixed(100))]
     }
 
-    init() {
-        // Construct a fetch request to show the 10 highest-priority, incomplete places from open guides.
-        let request: NSFetchRequest<Place> = Place.fetchRequest()
-
-        let completedPredicate = NSPredicate(format: "completed = false")
-        let openPredicate = NSPredicate(format: "guide.closed = false")
-        let compoundPredicate = NSCompoundPredicate(type: .and, subpredicates: [completedPredicate, openPredicate])
-
-        request.predicate = compoundPredicate
-
-        request.sortDescriptors = [
-            NSSortDescriptor(keyPath: \Place.priority, ascending: false)
-        ]
-
-        request.fetchLimit = 10
-        places = FetchRequest(fetchRequest: request)
+    init(dataController: DataController) {
+        let viewModel = ViewModel(dataController: dataController)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
 
     var body: some View {
@@ -49,32 +28,32 @@ struct HomeView: View {
                 VStack(alignment: .leading) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHGrid(rows: guideRows) {
-                            ForEach(guides, content: GuideSummaryView.init)
+                            ForEach(viewModel.guides, content: GuideSummaryView.init)
                         }
                         .padding([.horizontal, .top])
                         .fixedSize(horizontal: false, vertical: true)
                     }
 
                     VStack(alignment: .leading) {
-                        PlaceListView(title: "Up next", places: places.wrappedValue.prefix(3))
-                        PlaceListView(title: "More to explore", places: places.wrappedValue.dropFirst(3))
+                        PlaceListView(title: "Up next", places: viewModel.upNext)
+                        PlaceListView(title: "More to explore", places: viewModel.moreToExplore)
                     }
                     .padding(.horizontal)
                 }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("My Guides")
+            .toolbar {
+                Button("Add Data", action: viewModel.addSampleData)
+            }
         }
     }
 }
 
-// Button("Add Data") {
-//    dataController.deleteAll()
-//    try? dataController.createSampleData()
-// }
+// Button("Add Data", action: viewModel.addSampleData)
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(dataController: .preview)
     }
 }
